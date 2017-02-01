@@ -1,51 +1,79 @@
 #globalheader-container {
-    background: #333;
-    color: #fff;
+  background: #333;
+  color: #fff;
 }
 
 #blog-title,
 .header-image-enable #blog-title,
 .header-image-only #blog-title {
-    align-content: flex-end;
-    align-items: flex-end;
-    background: #f5ac32;
-    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.3) inset;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: column;
-    height: 200px;
-    justify-content: flex-end;
-    margin: 0 0 2rem 0;
-    text-align: right;
-    width: 100%;
+  background: #f5ac32;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 0;
+  width: 100%;
 }
 
 #blog-title-inner {
-    box-sizing: border-box;
-    height: 100%;
-    padding: 1rem 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+#blog-title-content {
+  width: 100%;
+  height: 100%;
 }
 
 #title {
-    font-size: 2rem;
-    font-weight: bolder;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  a:link,
+  a:visited {
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3) inset;
+  }
+  a:hover {
+    opacity: 1.0;
+  }
+  a:active {
+    opacity: 1.0;
+  }
 }
 
 #blog-description {
-    font-size: 1.1rem;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#overlay-container {
+  position: relative;
+  & * {
+    pointer-events: none;
+  }
+}
+
+#logo-image {
+  z-index: 1;
+  position: absolute;
+  top: -150px;
+  right: 3rem;
+  height: 135px;
 }
 
 /*
  * パンくずリスト
  */
 #top-box {
-    background: #fffef3;
-    border-radius: .1rem;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
-    color: #930;
-    font-size: 0.8rem;
-    margin: 2rem 3rem;
-    padding: .5rem;
+  background: #fffef3;
+  border-radius: .1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+  color: #930;
+  font-size: 0.8rem;
+  margin: 2rem 3rem;
+  padding: .5rem;
 }

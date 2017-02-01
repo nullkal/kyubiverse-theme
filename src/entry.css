@@ -125,6 +125,7 @@
     color: #ffffff;
     left: -2rem;
     padding-left: 2rem;
+    padding-right: 1rem;
     position: relative;
     width: 100%;
     &:before {
@@ -143,23 +144,13 @@
     border-bottom: 0.25rem solid #993300;
     position: relative;
     right: -1rem;
+    padding-right: 1rem;
   }
   blockquote {
-    background: #e0f3ff;
-    border: 1px solid #3366aa;
     margin: 0;
-    padding: 1em 2em;
-    position: relative;
-    z-index: 1;
     &:before {
-      color: #ffffff;
-      content: "“";
-      font-size: 8rem;
-      left: 0;
-      line-height: 1.0;
-      position: absolute;
-      top: 0;
-      z-index: -1;
+      padding: 1em;
+      border-left: 0.5em solid #cc9933;
     }
   }
   table {
@@ -194,6 +185,16 @@
   }
   code {
     padding: 1px;
+  }
+
+  img.hatena-fotolife {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  img.hatena-image-left,
+  img.hatena-image-right {
+    margin: 0 1rem 1rem;
   }
 }
 

@@ -98,11 +98,25 @@
   }
 }
 
+.hatena-module-html {
+  .hatena-module-title {
+    margin-bottom: 0.5em;
+  }
+}
+
 .urllist-date-link {
   a {
     color: #993300;
     size: 0.7rem;
   }
+}
+
+.urllist-title-link {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .urllist-categories {
@@ -117,5 +131,3 @@
 .urllist-image {
   float: left;
 }
-
-
