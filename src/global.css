@@ -12,10 +12,12 @@ h5,
 h6 {
   color: #993300;
   margin: 1em 0 0.5em 0;
-  a {
+  a:link,
+  a:visited {
     color: #993300;
   }
-  a.keyword{
+  a.keyword:link,
+  a.keyword:visited {
     border-bottom: none;
   }
 }
