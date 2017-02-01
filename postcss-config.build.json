@@ -5,6 +5,7 @@
     "postcss-import",
     "postcss-url",
     "postcss-nested",
+    "postcss-mixins",
     "postcss-cssnext"
   ],
   "input": "src/theme.css",

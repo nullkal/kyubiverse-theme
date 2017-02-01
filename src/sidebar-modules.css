@@ -56,12 +56,7 @@
 }
 
 .search-module-button {
-  background:
-  transparent
-  url('http://blog.hatena.ne.jp/images/theme/search.png')
-  center center
-  no-repeat;
-  background: transparent;
+  background: transparent url('http://blog.hatena.ne.jp/images/theme/search.png') center center no-repeat;
   border: none;
   box-sizing: border-box;
   display: block;
