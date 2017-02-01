@@ -12,8 +12,8 @@
 /*
  * 変数、ミックスイン
  */
-@import "./variables.css";
-@import "./mixins.css";
+@import "./_variables.css";
+@import "./_mixins.css";
 
 /*
  * テーマ全体に影響するスタイル
