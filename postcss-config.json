@@ -1,5 +1,7 @@
 {
   "use": [
+    "stylelint",
+    "postcss-reporter",
     "precss",
     "autoprefixer"
   ],
