@@ -7,7 +7,15 @@
  * Responsive: yes
  */
 
+@import "normalize.css";
+
+/*
+ * 変数、ミックスイン
+ */
+@import "./variables.css";
+@import "./mixins.css";
+
 /*
  * テーマ全体に影響するスタイル
  */
-@import "global.css";
+@import "./global.css";
