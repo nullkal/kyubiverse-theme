@@ -1,0 +1,90 @@
+@import "variables.css";
+
+body {
+  background: #ffeeaa;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #993300;
+  margin: 1em 0 0.5em 0;
+  a {
+    color: #993300;
+  }
+  a.keyword{
+    border-bottom: none;
+  }
+}
+
+h1 {
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 140%;
+}
+
+h5 {
+  font-size: 130%;
+}
+
+h6 {
+  font-size: 120%;
+}
+
+dt {
+  font-weight: bolder;
+}
+
+hr {
+  background: #cc9933;
+  border: none;
+  height: 1px;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: #4466aa;
+    text-decoration: none;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+a.keyword {
+  &:link,
+  &:visited {
+    border-bottom: 1px dotted #000;
+  }
+}
+
+.categories {
+  a {
+    background: #993300;
+    border-radius: 0.5em;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+  }
+}
