@@ -19,3 +19,22 @@
  * テーマ全体に影響するスタイル
  */
 @import "./global.css";
+
+/*
+ * 各パーツごとのスタイル
+ */
+@import "./header.css";
+@import "./content.css";
+@import "./entry.css";
+@import "./sidebar-modules.css";
+@import "./footer.css";
+
+/*
+ * 高解像度ディスプレイ用スタイル
+ */
+@import "./_retina.css";
+
+/*
+ * スマートフォン用スタイル
+ */
+@import "./_media-queries.css";

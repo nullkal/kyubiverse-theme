@@ -1,0 +1,42 @@
+#content {
+  margin: 1rem 3rem;
+}
+
+#content-inner {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#wrapper {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+#main {
+  padding-bottom: 3rem;
+}
+
+#box2 {
+  flex: 0 0 20rem;
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  min-width: 0;
+}
+
+.pager {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+.pager-next {
+  float: right;
+}
+
+.pager-prev {
+  float: left;
+}

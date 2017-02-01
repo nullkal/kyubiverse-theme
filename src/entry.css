@@ -1,0 +1,249 @@
+.entry,
+.archive-entry {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+}
+
+.entry {
+  margin: 3rem 0 1rem 0;
+}
+
+.archive-entry {
+  margin: 1rem 0;
+}
+
+.entry:nth-child(1) {
+  margin-top: 1rem;
+}
+
+.entry-date {
+  a {
+    background: #993300;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    height: 4rem;
+    left: -1rem;
+    position: absolute;
+    text-decoration: none;
+    top: -1rem;
+    width: 4rem;
+  }
+  time {
+    align-content: center;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.7rem;
+    height: 100%;
+    justify-content: center;
+    margin-top: 0.2rem;
+    width: 100%;
+    > * {
+      display: block;
+    }
+  }
+  .hyphen {
+    display: none;
+  }
+  .date-year::after {
+    content: '/';
+  }
+  .date-day {
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.entry-thumb {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.archive-entry-header {
+  .date {
+    font-size: 0.8rem;
+    a {
+      color: #999999;
+    }
+  }
+  .entry-title-link {
+    margin: 0;
+  }
+}
+
+.entry-title {
+  border-bottom: 1px dashed #993300;
+  margin: 0 0;
+  a {
+    margin-left: 2.5rem;
+  }
+}
+
+.entry-header-menu {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 1rem;
+  top: -0.8rem;
+  a {
+    background: #993300;
+    border-radius: 0.25em;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+  }
+}
+
+.entry-categories,
+.archive-entry .categories {
+  font-size: 0.8rem;
+  margin: 0 0 0.5rem 0;
+  text-align: right;
+}
+
+.entry-content {
+  line-height: 1.7;
+  margin: 1rem 0;
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  p {
+    margin: 0 0 1em 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  h3 {
+    background :#993300;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    left: -2rem;
+    padding-left: 2rem;
+    position: relative;
+    width: 100%;
+    &:before {
+      border-color: transparent;
+      border-right-color: #662200;
+      border-style: solid;
+      border-width: 0 1rem 1rem 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 100%;
+    }
+  }
+  h4 {
+    border-bottom: 0.25rem solid #993300;
+    position: relative;
+    right: -1rem;
+  }
+  blockquote {
+    background: #e0f3ff;
+    border: 1px solid #3366aa;
+    margin: 0;
+    padding: 1em 2em;
+    position: relative;
+    z-index: 1;
+    &:before {
+      color: #ffffff;
+      content: "“";
+      font-size: 8rem;
+      left: 0;
+      line-height: 1.0;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1em;
+    img {
+      max-width: none;
+    }
+  }
+  table th,
+  table td {
+    border: 1px solid #cc9933;
+    padding: 5px 10px;
+  }
+  table th {
+    background: #fffee0;
+  }
+  .hatena-asin-detail {
+    li {
+      line-height: 1.4;
+    }
+  }
+  pre,
+  code {
+    background: #fffef3;
+    border: 1px solid #cc9933;
+    font-family: monospace;
+  }
+  pre {
+    padding: 0.5em 1em;
+  }
+  code {
+    padding: 1px;
+  }
+}
+
+.entry-footer {
+  border-top: dashed 1px #993300;
+  padding-top: 0.5rem;
+}
+
+.entry-footer-section {
+  color: #993300;
+  font-size: 0.8em;
+  margin: 0 0 1rem 0;
+}
+
+.comment-box {
+  border-top: 1px solid #cc9933;
+  margin: 1rem 0;
+}
+
+.comment {
+  font-size: 0.8rem;
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #cc9933;
+    padding: 0 1em;
+  }
+}
+
+.comment-user-name {
+  margin: 0.5rem 0;
+}
+
+.comment-content {
+  margin: 0 1rem;
+  p {
+    margin: 1em 0;
+  }
+}
+
+.comment-metadata {
+  margin: 0.5rem 0;
+}
+
+.leave-comment-title {
+  background: #993300;
+  border-radius: 0.5em;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.25em 1em;
+}

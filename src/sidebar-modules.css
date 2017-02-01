@@ -1,0 +1,126 @@
+.hatena-module {
+  margin-bottom: 2rem;
+  p {
+    margin: 0.5em 0;
+  }
+}
+
+.hatena-module-title {
+  border-bottom: 0.1rem solid #993300;
+  color: #993300;
+  font-size: 1.2em;
+  font-weight: bolder;
+  a {
+    color: #993300;
+  }
+}
+
+.hatena-module-profile {
+  .hatena-module-title {
+    margin-bottom: 0.5em;
+  }
+  .profile-icon {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
+
+
+.hatena-module-search-box {
+  .hatena-module-title {
+    margin-bottom: 0.5em;
+  }
+}
+
+.search-form {
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.search-module-input {
+  background: #fffef3;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 1;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  width: 100%;
+  &:focus {
+    box-shadow: 0 0 4px rgba(153, 51, 0, 1.0);
+    outline: none;
+  }
+}
+
+.search-module-button {
+  background:
+  transparent
+  url('http://blog.hatena.ne.jp/images/theme/search.png')
+  center center
+  no-repeat;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-indent: 200%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  width: 2rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.hatena-urllist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #cc9933;
+    padding: 0.5em 1em;
+  }
+}
+
+.hatena-module-category {
+  .hatena-module-body {
+    margin-top: 0.5rem;
+  }
+  .hatena-urllist {
+    li {
+      border: none;
+      display: inline;
+      padding: 0;
+    }
+    @mixin categories;
+  }
+}
+
+.urllist-date-link {
+  a {
+    color: #993300;
+    size: 0.7rem;
+  }
+}
+
+.urllist-categories {
+  font-size: 0.7rem;
+  @mixin categories;
+}
+
+.urllist-entry-body {
+  size: 0.7em;
+}
+
+.urllist-image {
+  float: left;
+}
+
+

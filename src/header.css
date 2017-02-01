@@ -9,7 +9,7 @@
     align-content: flex-end;
     align-items: flex-end;
     background: #f5ac32;
-    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, .3) inset;
+    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.3) inset;
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
@@ -29,12 +29,12 @@
 #title {
     font-size: 2rem;
     font-weight: bolder;
-    text-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 #blog-description {
     font-size: 1.1rem;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -45,7 +45,7 @@
     border-radius: .1rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
     color: #930;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 2rem 3rem;
     padding: .5rem;
 }
