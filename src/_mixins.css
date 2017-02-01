@@ -1,0 +1,11 @@
+@define-mixin categories {
+  a {
+    background: #993300;
+    border-radius: 0.5em;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+  }
+}

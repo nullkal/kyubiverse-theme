@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  #logo-image {
+    right: 15px;
+  }
+  #top-box {
+    margin: 1.5rem 0.5rem;
+  }
+  #content {
+    margin: 2rem 0.5rem 1rem;
+  }
+  #content-inner {
+    display: block;
+  }
+  #main-inner {
+    padding-left: 1rem;
+  }
+  .page-archive #main-inner {
+    padding-left: 0;
+  }
+  #box2 {
+    margin-left: 0;
+  }
+  .entry-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .entry-content h3 {
+    font-size: 1.1rem;
+  }
+  .entry-content h4 {
+    font-size: 0.8rem;
+  }
+}

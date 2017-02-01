@@ -1,0 +1,13 @@
+{
+  "use": [
+    "stylelint",
+    "postcss-reporter",
+    "postcss-import",
+    "postcss-url",
+    "postcss-mixins",
+    "postcss-nested",
+    "postcss-cssnext"
+  ],
+  "input": "src/theme.css",
+  "output": "theme.css"
+}

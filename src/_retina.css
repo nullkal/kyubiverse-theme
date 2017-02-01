@@ -1,0 +1,10 @@
+@media screen and (-webkit-min-device-pixel-ratio:2),
+(min-resolution: 2dppx) {
+  .search-modue-button {
+    background:
+    transparent
+    url('http://blog.hatena.ne.jp/images/theme/search@2x.png')
+    center center
+    no-repeat;
+  }
+}
