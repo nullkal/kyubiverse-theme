@@ -3,6 +3,7 @@
     "stylelint",
     "postcss-reporter",
     "precss",
+    "postcss-inline-image",
     "autoprefixer"
   ],
   "input": "src/theme.css",
