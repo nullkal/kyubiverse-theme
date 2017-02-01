@@ -965,6 +965,9 @@ a.keyword {
 .urllist-entry-body {
   size: 0.7em;
 }
+.urllist-image {
+  float: left;
+}
 .pager:after {
   display: block;
   content: '';
