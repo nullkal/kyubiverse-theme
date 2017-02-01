@@ -1,0 +1,11 @@
+{
+  "use": [
+    "precss",
+    "autoprefixer"
+  ],
+  "input": "src/theme.css",
+  "output": "theme.css",
+  "autoprefixer": {
+    "browsers": "last 2 versions"
+  }
+}
