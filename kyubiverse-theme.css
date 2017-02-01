@@ -498,6 +498,20 @@ a:active {
 a.keyword {
   border-bottom: 1px dotted #000;
 }
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  background: #993300;
+  color: #ffffff;
+  padding: 0.25em 1em;
+  border-radius: 0.5em;
+}
+.btn-small {
+  font-size: 0.8rem;
+}
+.btn-large {
+  font-size: 1.2rem;
+}
 .categories a {
   display: inline-block;
   margin: 0.25em;
@@ -516,35 +530,60 @@ a.keyword {
 .header-image-enable #blog-title,
 .header-image-only #blog-title {
   width: 100%;
-  box-sizing: border-box;
   height: 200px;
-  margin: 0 0 2rem 0;
+  box-sizing: border-box;
+  margin: 0;
   background: #f5ac32;
-  box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3) inset;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-content: flex-end;
-  text-align: right;
 }
 #blog-title-inner {
+  width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  padding: 1rem 3rem;
+}
+#blog-title-content {
+  width: 100%;
+  height: 100%;
 }
 #title {
-  font-size: 2rem;
-  font-weight: bolder;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#title a {
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3) inset;
+}
+#title a:hover {
+  opacity: 1.0;
+}
+#title a:active {
+  opacity: 1.0;
 }
 #blog-description {
-  font-size: 1.1rem;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+#overlay-container {
+  position: relative;
+}
+#overlay-container * {
+  pointer-events: none;
+}
+#logo-image {
+  z-index: 1;
+  position: absolute;
+  top: -150px;
+  right: 3rem;
+  height: 135px;
 }
 #footer {
   padding: 1rem;
-  background: #333333;
+  background: #333333 linear-gradient(-45deg, #333333 25%, #3f3f3f 25%, #3f3f3f 50%, #333333 50%, #333333 75%, #3f3f3f 75%, #3f3f3f);
+  background-size: 4px 4px;
   box-shadow: 0 0.5rem 0.5rem 0 #000000 inset;
   color: #ffffff;
   text-align: center;
@@ -563,7 +602,7 @@ a.keyword {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 #content {
-  margin: 1rem 3rem;
+  margin: 2rem 3rem 1rem;
 }
 #content-inner {
   display: flex;
@@ -699,6 +738,7 @@ a.keyword {
   background: #993300;
   color: #ffffff;
   padding-left: 2rem;
+  padding-right: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .entry-content h3:before {
@@ -716,24 +756,12 @@ a.keyword {
   position: relative;
   right: -1rem;
   border-bottom: 0.25rem solid #993300;
+  padding-right: 1rem;
 }
 .entry-content blockquote {
-  position: relative;
   margin: 0;
-  padding: 1em 2em;
-  border: 1px solid #3366aa;
-  background: #e0f3ff;
-  z-index: 1;
-}
-.entry-content blockquote:before {
-  content: "“";
-  position: absolute;
-  line-height: 1.0;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  font-size: 8rem;
-  z-index: -1;
+  padding: 1em;
+  border-left: 0.5em solid #cc9933;
 }
 .entry-content table {
   border-collapse: collapse;
@@ -765,6 +793,14 @@ a.keyword {
 }
 .entry-content code {
   padding: 1px;
+}
+.entry-content img.hatena-fotolife {
+  display: block;
+  margin: 1rem auto;
+}
+.entry-content img.hatena-image-left,
+.entry-content img.hatena-image-right {
+  margin: 0 1rem 1rem;
 }
 .entry-footer {
   border-top: dashed 1px #993300;
@@ -900,9 +936,19 @@ a.keyword {
   border: none;
   padding: 0;
 }
+.hatena-module-html .hatena-module-title {
+  margin-bottom: 0.5em;
+}
 .urllist-date-link a {
   color: #993300;
   size: 0.7rem;
+}
+.urllist-title-link {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .urllist-categories {
   font-size: 0.7rem;
@@ -936,14 +982,14 @@ a.keyword {
   }
 }
 @media (max-width: 767px) {
-  #blog-title-inner {
-    padding: 1rem;
+  #logo-image {
+    right: 15px;
   }
   #top-box {
-    margin: 2rem 1rem;
+    margin: 1.5rem 0.5rem;
   }
   #content {
-    margin: 1rem;
+    margin: 2rem 0.5rem 1rem;
   }
   #content-inner {
     display: block;
@@ -956,5 +1002,15 @@ a.keyword {
   }
   #box2 {
     margin-left: 0;
+  }
+  .entry-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .entry-content h3 {
+    font-size: 1.1rem;
+  }
+  .entry-content h4 {
+    font-size: 0.8rem;
   }
 }
