@@ -5,7 +5,8 @@
   "author": "nullkal <nullkal@nil.nu>",
   "license": "MIT",
   "scripts": {
-    "build": "postcss --c postcss-config.json"
+    "build": "postcss --c postcss-config.build.json",
+    "sorting": "postcss --c postcss-config.sorting.json"
   },
   "devDependencies": {
     "normalize.css": "^5.0.0",
@@ -15,6 +16,7 @@
     "postcss-import": "^9.1.0",
     "postcss-nested": "^1.0.0",
     "postcss-reporter": "^3.0.0",
+    "postcss-sorting": "^2.0.1",
     "postcss-url": "^5.1.2",
     "stylelint": "^7.7.1",
     "stylelint-config-standard": "^15.0.1"
