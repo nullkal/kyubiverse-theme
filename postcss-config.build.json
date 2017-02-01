@@ -4,8 +4,8 @@
     "postcss-reporter",
     "postcss-import",
     "postcss-url",
-    "postcss-nested",
     "postcss-mixins",
+    "postcss-nested",
     "postcss-cssnext"
   ],
   "input": "src/theme.css",
